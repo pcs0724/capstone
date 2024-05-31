@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient_background">
+
+
+
+    <ImageView
+        android:id="@+id/appName"
+        android:layout_width="248dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/light" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="344dp"
+        android:layout_height="381dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="56dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.629"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/capture"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonshape"
+            android:fontFamily="@font/noka"
+            android:text="촬영하기"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:icon="@drawable/camera"
+            app:iconSize="28dp" />
+
+        <Button
+            android:id="@+id/album"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonshape"
+            android:fontFamily="@font/noka"
+            android:text="앨범 가져오기"
+            android:textSize="24sp"
+            app:icon="@drawable/picture"
+            app:iconSize="28dp"
+
+            />
+
+        <Button
+            android:id="@+id/history_button"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonshape"
+            android:fontFamily="@font/noka"
+            android:text="주변 정비소 찾기"
+            android:textSize="24sp"
+            app:icon="@drawable/map"
+
+            app:iconSize="28dp" />
+
+        <Button
+            android:id="@+id/list_button"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonshape"
+            android:fontFamily="@font/noka"
+            android:text="경고등 리스트"
+            android:textSize="24sp"
+            app:icon="@drawable/list"
+            app:iconSize="28dp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
